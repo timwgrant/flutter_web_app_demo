@@ -11,8 +11,4 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public-flutter")));
 
-app.listen(4000, (req, res) => {
-  console.log("Listening http://localhost:4000");
-});
-
 module.exports = app;
